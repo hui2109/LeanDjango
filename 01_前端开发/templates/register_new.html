@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <h1>用户注册</h1>
+    <form method="post" action="/register_new">
+      <div>
+        用户名: <input type="text" name="usr">
+      </div>
+
+      <div>
+        密码: <input type="password" name="pwd">
+      </div>
+
+      <div>
+        性别:
+        <input type="radio" name="gender" value="0"> 男
+        <input type="radio" name="gender" value="1"> 女
+      </div>
+
+      <div>
+        爱好: <input type="checkbox" name="hobby" value="2"> 篮球 <input type="checkbox" name="hobby" value="3"> 足球 <input type="checkbox" name="hobby" value="4"> 排球
+      </div>
+
+      <div>
+        城市:
+        <select name="city">
+          <option value="5">北京</option>
+          <option value="6">上海</option>
+          <option value="7">深圳</option>
+        </select>
+      </div>
+
+      <div>
+        技能:
+        <select multiple name="skill">
+          <option value="8">打游戏</option>
+          <option value="9">刷抖音</option>
+          <option value="10">吃饭</option>
+          <option value="11">睡觉</option>
+        </select>
+      </div>
+
+      <div>
+        你的简介:
+        <textarea cols="3" rows="3" name="info"></textarea>
+      </div>
+
+      <p></p>
+      <div>
+        <input type="submit" value="submit按钮">
+      </div>
+    </form>
+
+  </body>
+</html>
